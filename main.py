@@ -31,6 +31,9 @@ plt.show()
 
 
 df=pd.DataFrame({"red":r,"green":g,"blue":b})
+
+#Each row of the array is an observation. The columns are the features seen during each observation.
+
 df["red"]=whiten(df["red"])
 df["green"]=whiten(df["green"])
 df["blue"]=whiten(df["blue"])
